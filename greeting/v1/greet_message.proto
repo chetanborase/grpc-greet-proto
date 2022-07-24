@@ -1,0 +1,12 @@
+syntax = "proto3";
+package greeting.v1;
+
+option go_package = "greeting/v1;greet";
+
+message GreetRequest{
+  string name = 1;
+}
+
+message GreetResponse{
+  string reply = 1;
+}
